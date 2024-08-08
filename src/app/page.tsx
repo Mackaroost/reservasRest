@@ -3,18 +3,14 @@
 import Layout from "./Components/Layout";
 import { useState } from "react";
 import UserName from "./Components/UserName";
+import Persons from "./Components/Persons";
+import { useStore } from "@/store/useStore";
 
 export default function Home() {
-  const[showForm, setShowForm] = useState(false)
-  const[step, setStep]= useState(1)
 
-  const handleStartForm = ()=>{
-    setShowForm(true)
-  }
+const {step, showForm, onStarForm} = useStore()
+ 
 
-  const handleNext = ()=>{
-    setStep(step + 1)
-  }
   return (
     <Layout>
       {
@@ -24,7 +20,7 @@ export default function Home() {
             Bienvenidos a nuestro sistema de reserva de turnos, a continuación, completa los datos
           </p>
           <button
-            onClick={handleStartForm}
+            onClick={onStarForm}
             className="mt-10 bg-red-600 text-white font-semibold px-4 py-2 rounded-md"
           >
             Reservar
@@ -33,7 +29,10 @@ export default function Home() {
 
         ) :(
           <div className="flex flex-col items-center justify-center content-center">
-          {step === 1 && <UserName onNext = {handleNext}/>}
+          {step === 1 && <UserName/>}
+          {step === 2 && <Persons/>}
+          
+
           {/* Añade condiciones para renderizar las demás preguntas */}
         </div>
         )
