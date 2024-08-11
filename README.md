@@ -1,16 +1,22 @@
 Aplicación de Reserva de Restaurantes
+
 Descripción
+
 La Aplicación de Reserva de Restaurantes es una herramienta sencilla y eficiente para gestionar reservas en restaurantes. La aplicación está diseñada para facilitar el proceso de reserva mediante un formulario multipaso que recopila la información del usuario y muestra un resumen de la reserva generada al final.
 
 Características Principales
+
 Formulario de Reserva Multipaso: Un formulario dividido en varios pasos, con cada paso representado por un componente independiente. Cada paso del formulario recopila información específica sobre la reserva.
 Resumen de Reserva: Al final del formulario, se presenta un resumen detallado de la reserva generada, que muestra toda la información ingresada por el usuario para su confirmación.
+
 Tecnologías Utilizadas
+
 React: Biblioteca de JavaScript para construir la interfaz de usuario.
 TypeScript: Superset de JavaScript que añade tipos estáticos para mejorar el desarrollo y mantenimiento del código.
 Tailwind CSS: Framework de CSS para diseñar una interfaz moderna y responsiva de manera eficiente.
 Zustand: Biblioteca para el manejo del estado en la aplicación, facilitando la gestión de datos sin necesidad de prop drilling.
 React Hook Form: Biblioteca para la gestión de formularios en React, simplificando el manejo de entradas y validaciones.
+
 Estructura del Proyecto
 src/
 components/: Contiene todos los componentes de la aplicación.
