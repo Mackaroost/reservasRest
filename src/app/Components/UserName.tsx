@@ -8,13 +8,13 @@ interface Input{
 }
 
 const UserName = () => {
-  const {onNext, setName, nameUser} = useStore()
+  const {onNext, setName} = useStore()
 const{register, handleSubmit} = useForm<Input>()
 const onSubmit: SubmitHandler<Input> = (data)=> {
+ // console.log(data)
   setName(data.name)
-  console.log(name)
+  //console.log(name)
   onNext()
-  //setName('')
   //console.log(name)
 }
 
@@ -27,13 +27,11 @@ const onSubmit: SubmitHandler<Input> = (data)=> {
       <input
         type="text"
         {...register('name')}
-        placeholder="Ingresa tu nombre completo"
-        className="mt-4 px-4 py-2 border rounded-md"
+        placeholder="Nombre completo"
+        className="mt-4 px-4 py-2 border rounded-md mx-80"
       />
     
-      <button 
-        className="bg-black text-white font-semibold px-4 py-2 rounded-md mt-4"
-      >
+      <button className="bg-black text-white font-semibold px-4 py-2 rounded-md mt-4">
         Continuar
       </button>
       </form>
