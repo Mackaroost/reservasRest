@@ -1,6 +1,8 @@
 
 Aplicación de Reserva de Citas
+
 Descripción
+
 Esta es una aplicación de reserva de citas que permite a los usuarios crear y gestionar citas. La aplicación incluye un formulario multipaso para la reserva de citas, un calendario para visualizar las citas programadas, recordatorios para citas próximas y opciones para cancelar o reprogramar citas.
 
 Tecnologías Utilizadas
