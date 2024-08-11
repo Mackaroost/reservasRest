@@ -20,13 +20,22 @@ React Hook Form: Biblioteca para la gestión de formularios en React, simplifica
 Estructura del Proyecto
 src/
 components/: Contiene todos los componentes de la aplicación.
+
 FormStep1.tsx, FormStep2.tsx, FormSummary.tsx: Componentes para el formulario multipaso y el resumen de la reserva.
+
 store/: Configuración de Zustand para el manejo del estado.
+
 useStore.ts: Estado global y funciones para almacenar y gestionar la información de la reserva.
+
 styles/: Archivos de estilos con Tailwind CSS.
+
 index.css: Estilos globales aplicados a la aplicación.
+
 App.tsx: Componente principal que integra el formulario y el resumen de la reserva.
+
 index.tsx: Punto de entrada de la aplicación.
+
+
 Manejo del Estado con Zustand
 Zustand se utiliza para gestionar el estado global del formulario, permitiendo que los datos ingresados por el usuario se almacenen y se compartan entre los distintos componentes del formulario. La configuración de Zustand se encuentra en src/store/useStore.ts.
 
