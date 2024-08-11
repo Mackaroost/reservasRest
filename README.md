@@ -3,7 +3,7 @@ Aplicación de Reserva de Citas
 
 Descripción
 
-Esta es una aplicación de reserva de citas que permite a los usuarios crear y gestionar citas. La aplicación incluye un formulario multipaso para la reserva de citas, un calendario para visualizar las citas programadas, recordatorios para citas próximas y opciones para cancelar o reprogramar citas.
+Esta es una aplicación de reserva de citas que permite a los usuarios crear y gestionar citas. La aplicación incluye un formulario multipaso para la reserva de citas, un calendario para visualizar las citas programadas.
 
 Tecnologías Utilizadas
 React: Biblioteca de JavaScript para construir interfaces de usuario.
@@ -11,11 +11,10 @@ TypeScript: Superset de JavaScript que agrega tipos estáticos.
 Tailwind CSS: Framework de CSS para estilos rápidos y personalizados.
 Zustand: Biblioteca para el manejo del estado en aplicaciones React.
 React Hook Form: Biblioteca para la gestión de formularios en React.
+
 Características
 Formulario Multipaso: Un formulario dividido en varios pasos, donde cada paso se maneja como un componente separado. Al final, se muestra un resumen basado en las opciones seleccionadas.
-Calendario de Citas: Visualiza todas las citas programadas en un calendario.
-Recordatorios: Notificaciones para recordar a los usuarios sobre citas próximas.
-Gestión de Citas: Opciones para cancelar o reprogramar citas.
+
 Instalación
 Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
 
@@ -45,7 +44,6 @@ Estructura del Proyecto
 src/
 components/: Contiene todos los componentes de la aplicación.
 FormStep1.tsx, FormStep2.tsx, FormSummary.tsx: Componentes del formulario multipaso.
-Calendar.tsx: Componente para el calendario de citas.
 store/: Contiene la configuración de Zustand para el manejo del estado.
 useStore.ts: Configuración del estado global.
 styles/: Archivos de estilos usando Tailwind CSS.
