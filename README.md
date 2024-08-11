@@ -1,81 +1,28 @@
-
-Aplicación de Reserva de Citas
-
+Aplicación de Reserva de Restaurantes
 Descripción
+La Aplicación de Reserva de Restaurantes es una herramienta sencilla y eficiente para gestionar reservas en restaurantes. La aplicación está diseñada para facilitar el proceso de reserva mediante un formulario multipaso que recopila la información del usuario y muestra un resumen de la reserva generada al final.
 
-Esta es una aplicación de reserva de citas que permite a los usuarios crear y gestionar citas. La aplicación incluye un formulario multipaso para la reserva de citas, un calendario para visualizar las citas programadas.
-
+Características Principales
+Formulario de Reserva Multipaso: Un formulario dividido en varios pasos, con cada paso representado por un componente independiente. Cada paso del formulario recopila información específica sobre la reserva.
+Resumen de Reserva: Al final del formulario, se presenta un resumen detallado de la reserva generada, que muestra toda la información ingresada por el usuario para su confirmación.
 Tecnologías Utilizadas
-React: Biblioteca de JavaScript para construir interfaces de usuario.
-TypeScript: Superset de JavaScript que agrega tipos estáticos.
-Tailwind CSS: Framework de CSS para estilos rápidos y personalizados.
-Zustand: Biblioteca para el manejo del estado en aplicaciones React.
-React Hook Form: Biblioteca para la gestión de formularios en React.
-
-Características
-Formulario Multipaso: Un formulario dividido en varios pasos, donde cada paso se maneja como un componente separado. Al final, se muestra un resumen basado en las opciones seleccionadas.
-
-Instalación
-Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
-
-Clona el repositorio:
-
-bash
-Copiar código
-git clone https://github.com/tu_usuario/tu_repositorio.git
-Navega al directorio del proyecto:
-
-bash
-Copiar código
-cd tu_repositorio
-Instala las dependencias:
-
-bash
-Copiar código
-npm install
-Ejecuta la aplicación:
-
-bash
-Copiar código
-npm start
-La aplicación se ejecutará en http://localhost:3000.
-
+React: Biblioteca de JavaScript para construir la interfaz de usuario.
+TypeScript: Superset de JavaScript que añade tipos estáticos para mejorar el desarrollo y mantenimiento del código.
+Tailwind CSS: Framework de CSS para diseñar una interfaz moderna y responsiva de manera eficiente.
+Zustand: Biblioteca para el manejo del estado en la aplicación, facilitando la gestión de datos sin necesidad de prop drilling.
+React Hook Form: Biblioteca para la gestión de formularios en React, simplificando el manejo de entradas y validaciones.
 Estructura del Proyecto
 src/
 components/: Contiene todos los componentes de la aplicación.
-FormStep1.tsx, FormStep2.tsx, FormSummary.tsx: Componentes del formulario multipaso.
-store/: Contiene la configuración de Zustand para el manejo del estado.
-useStore.ts: Configuración del estado global.
-styles/: Archivos de estilos usando Tailwind CSS.
-index.css: Estilos globales de Tailwind.
-App.tsx: Componente principal que renderiza el formulario, el calendario y otros componentes.
+FormStep1.tsx, FormStep2.tsx, FormSummary.tsx: Componentes para el formulario multipaso y el resumen de la reserva.
+store/: Configuración de Zustand para el manejo del estado.
+useStore.ts: Estado global y funciones para almacenar y gestionar la información de la reserva.
+styles/: Archivos de estilos con Tailwind CSS.
+index.css: Estilos globales aplicados a la aplicación.
+App.tsx: Componente principal que integra el formulario y el resumen de la reserva.
 index.tsx: Punto de entrada de la aplicación.
-Uso de Zustand
-Zustand se utiliza para manejar el estado global de la aplicación. La configuración de Zustand se encuentra en src/store/useStore.ts. Aquí se define el estado global y las funciones para actualizarlo, como agregar, cancelar o reprogramar citas.
+Manejo del Estado con Zustand
+Zustand se utiliza para gestionar el estado global del formulario, permitiendo que los datos ingresados por el usuario se almacenen y se compartan entre los distintos componentes del formulario. La configuración de Zustand se encuentra en src/store/useStore.ts.
 
 Estilo con Tailwind CSS
-Tailwind CSS se utiliza para aplicar estilos a los componentes de la aplicación. Los estilos globales se encuentran en src/styles/index.css, y los estilos se aplican directamente en los componentes utilizando clases de Tailwind.
-
-Contribución
-Si deseas contribuir al proyecto, por favor sigue estos pasos:
-
-Haz un fork del repositorio.
-
-Crea una nueva rama para tus cambios:
-
-bash
-Copiar código
-git checkout -b mi-rama
-Realiza tus cambios y haz commits:
-
-bash
-Copiar código
-git add .
-git commit -m "Descripción de los cambios"
-Sube tus cambios a tu fork:
-
-bash
-Copiar código
-git push origin mi-rama
-Crea un pull request desde tu fork en GitHub.
-
+Tailwind CSS se emplea para aplicar estilos a la aplicación de manera modular y eficiente. Los estilos globales están definidos en src/styles/index.css, y los componentes individuales utilizan clases de Tailwind para asegurar un diseño cohesivo y adaptado a la interfaz de usuario.
